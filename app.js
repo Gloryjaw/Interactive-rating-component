@@ -34,7 +34,7 @@ for(let i = 0;i<stars.length;i++){
 }
 
 submit.addEventListener('click', function () {
-
+    if( rating == 0){return alert("Please enter a rating")}
     thankyoustate.style.display = "block"
     ratingstate.style.display = "none"
     variablerating.innerText = `You selected ${rating} out of 5`
