@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+/* Base CSS */
+:root {
+  /* l = light, m = medium,d= dark, vd = very dark  */
+  --white: hsl(0, 0%, 100%);
+  --l-grey: hsl(217, 12%, 63%);
+  --m-grey: hsla(216, 12%, 54%, 0.151);
+  --d-blue: hsl(213, 19%, 18%);
+  --vd-blue: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+p{
+  color: var(--l-grey);
+}
+h2{
+  color: var(--white);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--vd-blue);
+}
+main{
+  width: 30%;
+  max-width: 400px;
+  min-width: 350px;
+}
+img{
+  display: block;
+  
+}
+/* Main css */
+/* Rating section */
+.logo{
+  background-color: var(--m-grey);
+  padding: 0.8em;
+  border-radius: 1000px;
+  margin-bottom: 1.8em;
+}
+.rating-state,.thankyou-state{
+  background-color: var(--d-blue);
+  padding: 1.6em;
+  border-radius: 25px;
+}
+
+.thankyou-state{
+  display: none;
+}
+.rating-para{
+  text-align: left;
+  margin-bottom: 1.7em;
+  margin-top: 1em;
+}
+.stars-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1.8em;
+  justify-content: space-between;
+}
+.stars{
+  width: 50px;
+  height: 50px;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--m-grey);
+  border-radius: 1000px;
+  color: var(--l-grey);
+
+}
+.stars:hover{
+  cursor: pointer;
+}
+.submit-button{
+  width: 100%;
+  color: var(--white);
+  background-color: var(--orange);
+  border: none;
+  padding: 0.8em 0;
+  border-radius :20px;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.submit-button:hover{
+  background-color: var(--white);
+  color: var(--orange);
+  cursor: pointer;
+}
+/* Thank you section */
+.variable-thankyou-para{
+  text-align: center;
+  width: 60%;
+  background-color: var(--m-grey);
+  color: var(--orange);
+  border-radius: 20px;
+  padding: 0.2em 0;
+  margin: 0 auto;
+  margin-bottom: 1.8em;
+
+
+}
+figure>img{
+  margin: auto;
+  margin-bottom: 2.3em;
+}
+.thankyou-state>h2,.thankyou-state>p{
+  text-align: center;
+}
+.thankyou-heading{
+  margin-bottom: 0.5em;
+}
+
+.mousehover{
+  background-color: var(--l-grey);
+  color: var(--white);
+}
+.clicked{
+  background-color: var(--orange);
+  color: var(--white);
+}
+/* Media query (for both section) */
+@media(max-width:400px){
+  main{
+    min-width: 0;
+    width: 95%;
+  }
+}
+

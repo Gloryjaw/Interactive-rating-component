@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+  <main>
+    <!-- Rating state start -->
+    <div class="rating-state">
+      
+      <img class="logo" src="./images/icon-star.svg" alt="icon-star">
+      <h2 class="rating-heading">How did we do?</h1>
+      <p class="rating-para">
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+        offering!
+      </p>
+      <ul class="stars-list">
+        <li class="stars star--first">1</li>
+        <li class="stars star--second">2</li>
+        <li class="stars star--third">3</li>
+        <li class="stars star--fourth">4</li>
+        <li class="stars star--fifth">5</li>
+      </ul>
+      <button class="submit-button">SUBMIT</button>
+    </div>
+
+
+    <!-- Rating state end -->
+    <!-- Thank you state start -->
+    <div class="thankyou-state">
+      <!-- Add rating here -->
+      <figure>
+        <img src="./images/illustration-thank-you.svg" alt="thankYou">
+      </figure>
+      
+      <p class="variable-thankyou-para">You selected variable out of 5</p>
+      <h2 class="thankyou-heading">Thank you!</h2>
+      <p class="thankyou-para">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+    <!-- Thank you state end -->
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
